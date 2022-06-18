@@ -1,0 +1,55 @@
+body {
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .container {
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        align-items: center;
+       
+        .panel {
+            flex:0.5;
+            height: 80vh;
+            background-color: red;
+            box-sizing: border-box;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            transition:flex 0.7s ease-in;
+            cursor: pointer;
+            & h3{
+                position: absolute;
+                opacity: 0;
+                bottom: 20px;
+                left: 20px;
+                font-size: 30px;
+                color: #fff;
+            }  
+        
+        }
+        .active h3 {
+            opacity: 1;
+                transition: opacity 0.3s ease-in 0.4s;
+        }
+        .active {
+            flex:5;
+        }
+    }
+
+}
+@media (max-width:480px) {
+    .container {
+        width:100vw;
+    }
+    .panel:nth-child(4),
+    .panel:nth-child(5) {
+         display:none;
+    }
+}
