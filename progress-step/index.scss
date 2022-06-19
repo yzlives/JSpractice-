@@ -1,64 +1,69 @@
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  .contain {
-    start {
-      width: 30px;
-    }
-  }
-  .steps {
+    padding:0;
+    margin:0;
+    height:100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    .other {
-      display: flex;
-      align-items: center;
-      span {
-        width: 200px;
-        height: 10px;
-        background-color: #ccc;
+    overflow: hidden;
+    .contain {
+        start {
+            width: 30px;
+        }
+    }
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+      .other {
+        display: flex;
+        align-items: center;
+        span {
+            width: 200px;
+            height: 10px;
+            background-color:#ccc;
+               }
+             & .bgc {
+                background-color:#3498DB;
+                transition: all 0.4s;
+            }
       }
-      & .bgc {
-        background-color: #3498db;
-        transition: all 0.4s;
-      }
+        .one, em {
+            font-style: normal;
+           width: 50px;
+           height: 50px;
+           border-radius:50%;
+           text-align: center;
+           line-height: 50px;
+           font-size: 30px;
+           border: 4px solid #ccc;
+        }
+        & .actives {
+            border: 4px solid #3498DB;
+        }
     }
-    .one,
-    em {
-      font-style: normal;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 50px;
-      font-size: 30px;
-      border: 4px solid #ccc;
+    .btn {
+        text-align: center;
+        margin-top:100px;
+        
+        button {
+            margin: 0 5px;
+            padding: 15px 50px;
+            border-radius: 5px;
+            border: none;
+            color:#fff;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: #3498DB;
+            &:disabled {
+              background-color: #ccc;
+              cursor: not-allowed;
+            }
+        }
+            
+       
+       
     }
-    & .actives {
-      border: 4px solid #3498db;
-    }
-  }
-  .btn {
-    text-align: center;
-    margin-top: 100px;
-    button {
-      margin: 0 5px;
-      padding: 15px 50px;
-      border-radius: 5px;
-      border: none;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
-      background-color: #ccc;
-    }
-    .active {
-      background-color: #3498db;
-    }
-  }
+   
 }

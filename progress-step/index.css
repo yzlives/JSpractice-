@@ -31,12 +31,11 @@ body .steps .other span {
 }
 
 body .steps .other .bgc {
-  background-color: #3498db;
+  background-color: #3498DB;
   transition: all 0.4s;
 }
 
-body .steps .one,
-body .steps em {
+body .steps .one, body .steps em {
   font-style: normal;
   width: 50px;
   height: 50px;
@@ -48,7 +47,7 @@ body .steps em {
 }
 
 body .steps .actives {
-  border: 4px solid #3498db;
+  border: 4px solid #3498DB;
 }
 
 body .btn {
@@ -64,9 +63,10 @@ body .btn button {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  background-color: #ccc;
+  background-color: #3498DB;
 }
 
-body .btn .active {
-  background-color: #3498db;
+body .btn button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
